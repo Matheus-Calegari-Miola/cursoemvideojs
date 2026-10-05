@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4</title>
+</head>
+<body>
+    <script>
+        let temDinheiro = true;
+        let temTempo = true;
+
+        if (temDinheiro && temTempo) {
+            console.log("Você pode viajar!");
+        } else {
+            console.log("Fica em casa estudando programção");
+        }
+
+
+        let estouComFome = false; // "Não estou com fome" (Falso)
+
+
+        // O "!" inverte o false para true (Não Falso = Verdadeiro)
+
+        if (!estouComFome) {
+            console.log("Não vou comer nada agora");
+        }
+
+        let carroQuebrado = false;
+        console.log(!carroQuebrado);
+
+
+    console.log("O oposto de SIM (true)é" , !true);
+    console.log("O oposto de NÃO (false) é:", !false);
+
+
+    let temSaldoNaConta = true; // Sim, você tem dinheiro
+    let digitouASenhaCerta = false; // Você errou a senha!
+
+
+    // O banco checa: Você tem saldo E digitou a senha certa?
+    if (temSaldoNaConta && digitouASenhaCerta) {
+        console.log("Saque liberado!");
+    } else {
+        console.log("Acesso negado!");
+    }
+
+
+
+    </script>
+    
+</body>
+</html>

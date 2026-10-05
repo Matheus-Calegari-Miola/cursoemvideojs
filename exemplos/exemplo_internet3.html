@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 3</title>
+</head>
+<body>
+    <script>
+        // Nossas variáveis (os dados do cliente)
+        const valorDaCompra = 120;
+        const temCupomFreteGratis = false;
+        const ehClientePrime = true;
+
+        console.log("--- Analisando o pedido --- \n");
+
+        // 1. Usando o operador || (OU)
+        // O cliente ganha frete grátis se tiver o cupom OU se for Prime
+        if (temCupomFreteGratis || ehClientePrime) {
+            console.log("Parabéns! Você tem direito a Frete Grátis.");
+        } else {
+            console.log("O frete para o seu endereço custa R$ 15,00");
+        }
+
+        // 2. Usando o operador && (E)
+        // Para ganhar um brinde extra, a compra precisavser maior que R$ 100 e ele precisa ser Prime
+        if (valorDaCompra > 100 && ehClientePrime) {
+            console.log("Ganhou um brinde surpresa!");
+        }
+
+        // 3. Usando o operador ! (NÃO)
+        // Se NÃO for cliente Prime, mostrando uma propaganda
+        if (!ehClientePrime) {
+            console.log("Assine o plano Prime para ter mais vantagens!");
+        }
+
+    </script>
+    
+</body>
+</html>
